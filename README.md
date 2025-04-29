@@ -1,50 +1,39 @@
-r# Welcome to your Expo app 👋
+# MoviesApp/ReactNative 🍿
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Uygulama Ekranları 
 
-## Get started
+<p align="left">
+  <img src="screenshots/splash.gif" alt="Splash Screen" width="200"/>
+  <img src="screenshots/Home.gif" alt="Home Screen" width="200"/>
+  <img src="screenshots/search.png" alt="Search Screen" width="200"/>
+</p>
+<p align="left">
+  <b>Splah Screen</b>&nbsp;&nbsp;&nbsp;&nbsp;
+  <b>Home Screen</b>&nbsp;&nbsp;&nbsp;&nbsp;
+  <b>Search Screen</b>
+</p>
 
-1. Install dependencies
+<p align="left">
+  <img src="screenshots/search1.png" alt="Search1 Screen" width="200"/>
+  <img src="screenshots/favori.png" alt="Favorites Screen" width="200"/>
+  <img src="screenshots/detail.png" alt="Detail Screen" width="200"/>
+</p>
+<p align="left">
+  <b>Search1 Screen</b>&nbsp;&nbsp;&nbsp;&nbsp;
+  <b>Favorite Screen</b>&nbsp;&nbsp;&nbsp;&nbsp;
+  <b>Detail Screen</b>
+</p>
 
-   ```bash
-   npm install
-   ```
+## Kullanılan Teknolojiler 👨🏻‍💻
 
-2. Start the app
+- **FlatList (horizontal)** – Ana sayfada yana doğru kayan kategoriler özelliği için kullanıldı.
+- **Merkezi Renk Yönetimi (`Colors.ts`)** – Renkleri tek bir dosyada toplanarak, kolayca yönetilebilir ve değiştirilebilir hale getirildi.
+- **Dinamik Splash Ekranı** – Uygulama açılışında, otomatik olarak değişen film görselleriyle kullanıcıya dinamik ve ilgi çekici bir karşılama ekranı sağlanmıştır.
+- **Favorilere Ekleme ve Çıkarma** – Kullanıcılar, istedikleri filmleri favorilerine ekleyebilir veya çıkarabilir. Favori filmler, uygulama kapatılsa bile kaybolmaz; cihazda kalıcı olarak saklanır (AsyncStorage ile).
+- **Sayfalar Arası Geçiş (router)** – Uygulama içinde farklı ekranlar arasında hızlı ve sorunsuz geçişler için `router` kullanılmıştır.
+- **Axios** – API isteklerini gerçekleştirmek için kullanıldı.
 
-   ```bash
-    npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## İletişim 💌
+- ozturkkensar@gmail.com
+- https://github.com/EnsarOzturk
+- www.linkedin.com/in/ensar-öztürk-3aa986235
