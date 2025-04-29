@@ -27,7 +27,7 @@ export default function HomeScreen({ showExploreButton = true }) { // butonun g�
       setImageIndex((prevIndex) => 
         prevIndex === images.length - 1 ? 0 : prevIndex + 1 // son resimde başa döndürmek için kullandım .
       );
-    }, 2000); // resim değişme süresi ayarıı
+    }, 1000); // resim değişme süresi ayarıı
 
     return () => clearInterval(interval); //işlem dursun diye kullaıyors, farklı ekrana geçince vs....
   }, [images]);
@@ -39,18 +39,14 @@ export default function HomeScreen({ showExploreButton = true }) { // butonun g�
   return (
     <View style={styles.container}>
       <Image
-        source={images[imageIndex]}
+        source={images[imageIndex]} // eklediğim resim indexleri al.
         style={styles.backgroundImage}
-        resizeMode="cover"
+        resizeMode="cover" // cover = ekranı kaplama olayı.
       />
       {showExploreButton && (
           <Pressable 
             style={({ pressed }) => [
               styles.exploreButton,
-              {
-                transform: [{ scale: pressed ? 0.95 : 1 }],
-                opacity: pressed ? 0.9 : 1,
-              }
             ]}
             onPress={handleExplorePress}
           >
@@ -91,12 +87,6 @@ const styles = StyleSheet.create({
     shadowRadius: 6,
     borderWidth: 1,
     borderColor: '#FF6666',
-    // iOS için cam efekti
-    ...Platform.select({
-      ios: {
-        backdropFilter: 'blur(10px)',
-      },
-    }),
   },
   exploreButtonText: {
     fontSize: 18,
